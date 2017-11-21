@@ -13,42 +13,310 @@
   <script src="../dist/videojs.wavesurfer.js"></script>
 
   <style>
-  /* change player background color */
-  #myAudio {
-      background-color: #FFEEFF;
+  .grid-container {
+    width: 1900px;
+    height: 1500px;
+  }
+
+  .grid-tile {
+    width: 450px;
+    height: 300px;
+    outline: 1px solid black;
+    float: left;
+  }
+  .small-grid-tile {
+    width: 100px;
+    height: 300px;
+    outline: 1px solid black;
+    float: left;
+  }
+
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   </style>
 
 </head>
 <body>
 
-<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+<!-- **************************************************** HAL GRID **************************************************** -->
+<div class="grid-container">
+    <!-- ************************** ZOOM LEVEL 64 ************************** -->
+    <div class="grid-tile">
+        <h4>hal-1px-64</h4>
+        <audio id="hal-1px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-2px-64</h4>
+        <audio id="hal-2px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-3px-64</h4>
+        <audio id="hal-3px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-4px-64</h4>
+        <audio id="hal-4px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>235K</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 128 ************************** -->
+    <div class="grid-tile">
+        <h4>hal-1px-128</h4>
+        <audio id="hal-1px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-2px-128</h4>
+        <audio id="hal-2px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-3px-128</h4>
+        <audio id="hal-3px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-4px-128</h4>
+        <audio id="hal-4px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>117K</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 256 ************************** -->
+    <div class="grid-tile">
+        <h4>hal-1px-256</h4>
+        <audio id="hal-1px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-2px-256</h4>
+        <audio id="hal-2px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-3px-256</h4>
+        <audio id="hal-3px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-4px-256</h4>
+        <audio id="hal-4px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>58K</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 512 ************************** -->
+    <div class="grid-tile">
+        <h4>hal-1px-512</h4>
+        <audio id="hal-1px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-2px-512</h4>
+        <audio id="hal-2px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-3px-512</h4>
+        <audio id="hal-3px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-4px-512</h4>
+        <audio id="hal-4px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>29K</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 1024 ************************** -->
+    <div class="grid-tile">
+        <h4>hal-1px-1024</h4>
+        <audio id="hal-1px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-2px-1024</h4>
+        <audio id="hal-2px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-3px-1024</h4>
+        <audio id="hal-3px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>hal-4px-1024</h4>
+        <audio id="hal-4px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>14K</h4>
+    </div>
+</div>
+
+<br><br><br><br>
+<!-- **************************************************** LONG GRID **************************************************** -->
+<div class="grid-container">
+    <!-- ************************** ZOOM LEVEL 64 ************************** -->
+    <div class="grid-tile">
+        <h4>long-1px-64</h4>
+        <audio id="long-1px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-2px-64</h4>
+        <audio id="long-2px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-3px-64</h4>
+        <audio id="long-3px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-4px-64</h4>
+        <audio id="long-4px-64" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>62M</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 128 ************************** -->
+    <div class="grid-tile">
+        <h4>long-1px-128</h4>
+        <audio id="long-1px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-2px-128</h4>
+        <audio id="long-2px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-3px-128</h4>
+        <audio id="long-3px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-4px-128</h4>
+        <audio id="long-4px-128" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>31M</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 256 ************************** -->
+    <div class="grid-tile">
+        <h4>long-1px-256</h4>
+        <audio id="long-1px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-2px-256</h4>
+        <audio id="long-2px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-3px-256</h4>
+        <audio id="long-3px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-4px-256</h4>
+        <audio id="long-4px-256" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>15M</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 512 ************************** -->
+    <div class="grid-tile">
+        <h4>long-1px-512</h4>
+        <audio id="long-1px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-2px-512</h4>
+        <audio id="long-2px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-3px-512</h4>
+        <audio id="long-3px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-4px-512</h4>
+        <audio id="long-4px-512" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>7.6M</h4>
+    </div>
+
+    <!-- ************************** ZOOM LEVEL 1024 ************************** -->
+    <div class="grid-tile">
+        <h4>long-1px-1024</h4>
+        <audio id="long-1px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-2px-1024</h4>
+        <audio id="long-2px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-3px-1024</h4>
+        <audio id="long-3px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="grid-tile">
+        <h4>long-4px-1024</h4>
+        <audio id="long-4px-1024" class="video-js vjs-default-skin"></audio>
+    </div>
+    <div class="small-grid-tile">
+        <h4>3.8M</h4>
+    </div>
+</div>
 
 <script>
-var player = videojs('myAudio', {
-    controls: true,
-    autoplay: true,
-    fluid: false,
-    loop: false,
-    width: 600,
-    height: 300,
-    plugins: {
-        wavesurfer: {
-            src: 'media/hal.wav',
-            msDisplayMax: 10,
-            debug: true,
-            waveColor: 'grey',
-            progressColor: 'black',
-            cursorColor: 'black',
-            hideScrollbar: true
-        }
-    }
-});
+// Initialize players using hal.wav
+for(var barWidth = 1; barWidth <= 4; barWidth++) {
+    for(var zoom = 64; zoom <= 1024; zoom *= 2) {
+        var id = "hal-" + barWidth + "px-" + zoom;
+        var json = "hal-" + zoom + ".json";
 
-// error handling
-player.on('error', function(error) {
-    console.warn('ERROR:', error);
-});
+        videojs(id, {
+            controls: true,
+            autoplay: true,
+            fluid: false,
+            loop: false,
+            width: 425,
+            height: 250,
+            plugins: {
+                wavesurfer: {
+                    src: 'media/hal.wav',
+                    peaks: 'media/' + json,
+                    barWidth: barWidth,
+                    msDisplayMax: 10,
+                    debug: true,
+                    waveColor: 'grey',
+                    progressColor: 'black',
+                    cursorColor: 'black',
+                    hideScrollbar: true
+                }
+            }
+        });
+    }
+}
+
+// Initialize players using long.wav
+for(var barWidth = 1; barWidth <= 4; barWidth++) {
+    for(var zoom = 64; zoom <= 1024; zoom *= 2) {
+        var id = "long-" + barWidth + "px-" + zoom;
+        var json = "long-" + zoom + ".json";
+
+        videojs(id, {
+            controls: true,
+            autoplay: true,
+            fluid: false,
+            loop: false,
+            width: 425,
+            height: 250,
+            plugins: {
+                wavesurfer: {
+                    src: 'media/long.wav',
+                    peaks: 'media/' + json,
+                    barWidth: barWidth,
+                    msDisplayMax: 10,
+                    debug: true,
+                    waveColor: 'grey',
+                    progressColor: 'black',
+                    cursorColor: 'black',
+                    hideScrollbar: true
+                }
+            }
+        });
+    }
+}
 </script>
 
 </body>
